@@ -9,7 +9,7 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: yarn
+            - run: yarn install --frozen-lockfile
             - run: |
                 curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
                 chmod +x ./cc-test-reporter
