@@ -7,16 +7,12 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - setup-dependencies:
+      - node/with-cache:
           steps:
             - run: yarn
-      - run:
-          name: Setup Code Climate test-reporter
-          command: |
-            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-            chmod +x ./cc-test-reporter
-      - run-unit-tests:
-          steps:
+            - run: |
+                curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+                chmod +x ./cc-test-reporter
             - run: ./cc-test-reporter before-build
             - run: yarn test -- --coverage
             - run: ./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?
