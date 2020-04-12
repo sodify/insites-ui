@@ -1,24 +1,25 @@
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 import Checkbox from './'
 import { ThemeProvider } from 'styled-components'
 import theme from '../theme'
 
 describe('Checkbox component', () => {
   it('renders', () => {
-    const mockedOnChange = jest.fn()
-    render(
+    let isChecked = false
+    const toggle = () => { isChecked = !isChecked }
+    const { getByText } = render(
       <ThemeProvider theme={theme}>
         <Checkbox
           id="rememberMe"
-          defaultChecked={true}
-          onChange={mockedOnChange}
+          checked={isChecked}
+          onChange={toggle}
         >
           Remember me
         </Checkbox>
       </ThemeProvider>
     )
-    const linkElement = screen.getByText(/Remember me/i)
-    expect(linkElement).toBeInTheDocument()
+    fireEvent.click(getByText('Remember me'))
+    expect(isChecked).toBeTruthy()
   })
 })

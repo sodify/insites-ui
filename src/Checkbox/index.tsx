@@ -22,7 +22,7 @@ const StyledCheckbox = styled.div<CheckboxProps>`
 
 export default ({ id, children, checked, onChange, ...rest }: any) => (
   <ControlContainer>
-    <HiddenCheckbox id={id} checked={checked} {...rest} />
+    <HiddenCheckbox id={id} checked={checked} readOnly {...rest} />
     <StyledCheckbox checked={checked} onClick={onChange} />
     <Label onClick={onChange} htmlFor={id}>{children}</Label>
   </ControlContainer>

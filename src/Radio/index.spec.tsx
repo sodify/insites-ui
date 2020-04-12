@@ -1,16 +1,23 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Container from './'
+import Radio from './'
 import { ThemeProvider } from 'styled-components'
 import theme from '../theme'
 
-describe('Container component', () => {
+describe('Radio component', () => {
   it('renders correctly', () => {
     const { getByText } = render(
       <ThemeProvider theme={theme}>
-        <Container>Contain it</Container>
+        <Radio
+          id="sizeL"
+          name="size"
+          value="l"
+          defaultChecked={true}
+        >
+          L size
+        </Radio>
       </ThemeProvider>
     )
-    expect(getByText('Contain it')).toBeTruthy()
+    expect(getByText('L size')).toBeTruthy()
   })
 })

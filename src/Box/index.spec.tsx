@@ -1,16 +1,16 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Container from './'
+import Box from './'
 import { ThemeProvider } from 'styled-components'
 import theme from '../theme'
 
-describe('Container component', () => {
+describe('Box component', () => {
   it('renders correctly', () => {
     const { getByText } = render(
       <ThemeProvider theme={theme}>
-        <Container>Contain it</Container>
+        <Box>I'm a box</Box>
       </ThemeProvider>
     )
-    expect(getByText('Contain it')).toBeTruthy()
+    expect(getByText("I'm a box")).toBeTruthy()
   })
 })

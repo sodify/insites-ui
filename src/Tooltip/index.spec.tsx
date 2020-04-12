@@ -1,16 +1,19 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Container from './'
+import Tooltip from './'
 import { ThemeProvider } from 'styled-components'
 import theme from '../theme'
 
-describe('Container component', () => {
+describe('Textarea component', () => {
   it('renders correctly', () => {
     const { getByText } = render(
       <ThemeProvider theme={theme}>
-        <Container>Contain it</Container>
+        <Tooltip.Trigger>
+          Hover me
+          <Tooltip.Message>Hmmm</Tooltip.Message>
+        </Tooltip.Trigger>
       </ThemeProvider>
     )
-    expect(getByText('Contain it')).toBeTruthy()
+    expect(getByText('Hover me')).toBeTruthy()
   })
 })

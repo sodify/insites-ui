@@ -1,16 +1,16 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Container from './'
+import Text from './'
 import { ThemeProvider } from 'styled-components'
 import theme from '../theme'
 
-describe('Container component', () => {
+describe('Text component', () => {
   it('renders correctly', () => {
-    const { getByText } = render(
+   const { getByText } = render(
       <ThemeProvider theme={theme}>
-        <Container>Contain it</Container>
+        <Text>Example text</Text>
       </ThemeProvider>
     )
-    expect(getByText('Contain it')).toBeTruthy()
+    expect(getByText('Example text')).toBeTruthy()
   })
 })
