@@ -1,6 +1,6 @@
 {
   "name": "insites-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "author": "Tomasz Marciniakm <tmarciniakm@gmail.com>",
   "homepage": "https://github.com/insites-co/insites-ui",
@@ -8,7 +8,7 @@
     "test": "react-scripts test",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "dist": "tsc --noEmit false"
+    "dist": "tsc --noEmit false && copyfiles -u 1 ./src/**/*.svg dist"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.5.0",
@@ -39,6 +39,7 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
+    "copyfiles": "^2.2.0",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-is": "^16.13.1",
     "storybook-chromatic": "^3.5.2",
