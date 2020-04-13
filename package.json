@@ -6,7 +6,7 @@
     "test": "react-scripts test",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "dist": "tsc -w"
+    "dist": "tsc --noEmit false"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.5.0",
@@ -39,6 +39,7 @@
     "@storybook/react": "^5.3.18",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-is": "^16.13.1",
+    "storybook-chromatic": "^3.5.2",
     "ts-loader": "^6.2.2"
   },
   "jest": {

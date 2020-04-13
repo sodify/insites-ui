@@ -4,6 +4,7 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 import styled from 'styled-components';
 import InputAppearance from '../mixins/InputAppearance';
-var Select = styled.select(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", ";\n"], ["\n  ", ";\n"])), InputAppearance);
+import ChevronDownIcon from './chevron-down.svg';
+var Select = styled.select(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", ";\n  background-image: url(", ");\n  background-repeat: no-repeat;\n  background-position: center right 0.75rem;\n"], ["\n  ", ";\n  background-image: url(", ");\n  background-repeat: no-repeat;\n  background-position: center right 0.75rem;\n"])), InputAppearance, ChevronDownIcon);
 export default Select;
 var templateObject_1;

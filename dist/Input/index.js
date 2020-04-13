@@ -27,15 +27,14 @@ var __rest = (this && this.__rest) || function (s, e) {
 import React from 'react';
 import styled from 'styled-components';
 import InputAppearance from '../mixins/InputAppearance';
-import { lighten, rgba } from 'polished';
 import Tooltip from '../Tooltip';
 import { ReactComponent as AlertIcon } from './alert-circle.svg';
 import { ReactComponent as HelpIcon } from './help.svg';
 var InputWrapper = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
 var Icon = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0.75rem;\n  \n  ", "\n"], ["\n  position: absolute;\n  top: 0.75rem;\n  \n  ",
     "\n"])), function (props) { return props.position === 'right' ? "\n    right: 1rem;\n  " : "\n    left: 1rem;\n  "; });
-var Input = styled.input(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  ", ";\n  position: relative;\n\n  ", "\n  \n  &::placeholder {\n    color: ", ";\n  }\n  \n  &:focus {\n    outline: none;\n    border: 1px ", " solid;\n    box-shadow: 0 0.125rem 0.5rem ", ";\n  }\n"], ["\n  ", ";\n  position: relative;\n\n  ",
-    "\n  \n  &::placeholder {\n    color: ", ";\n  }\n  \n  &:focus {\n    outline: none;\n    border: 1px ", " solid;\n    box-shadow: 0 0.125rem 0.5rem ", ";\n  }\n"])), InputAppearance, function (props) { return props.hasIcon && "\n    padding-left: 3rem;\n  "; }, function (props) { return lighten(0.25, props.theme.colors.text); }, function (props) { return props.theme.colors.inputFocused; }, rgba('#202C4B', 0.08));
+var Input = styled.input(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  ", ";\n  position: relative;\n\n  ", "\n"], ["\n  ", ";\n  position: relative;\n\n  ",
+    "\n"])), InputAppearance, function (props) { return props.hasIcon && "\n    padding-left: 3rem;\n  "; });
 export default (function (_a) {
     var hasError = _a.hasError, IconComponent = _a.IconComponent, tooltip = _a.tooltip, rest = __rest(_a, ["hasError", "IconComponent", "tooltip"]);
     return (React.createElement(InputWrapper, { hasError: hasError },

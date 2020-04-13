@@ -25,6 +25,8 @@
     "types.d.ts"
   ],
   "exclude": [
-    "**/*.stories.tsx"
+    "**/*.stories.tsx",
+    "**/*.spec.tsx",
+    "src/setupTests.ts"
   ]
 }
