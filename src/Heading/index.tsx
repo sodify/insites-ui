@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { space, typography, color, layout } from 'styled-system'
 
 interface HeadingProps {
   size?: string
@@ -11,6 +12,10 @@ const HEADING_SIZES: {[key: string]: string} = {
 }
 
 const Heading = styled.h1<HeadingProps>`
+  ${color};
+  ${space};
+  ${typography};
+  ${layout};
   font-size: ${props => HEADING_SIZES[props.size || 'xl']};
   font-family: ${props => props.theme.fonts.heading};
   font-weight: ${props => props.theme.fontWeights.bold};

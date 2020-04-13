@@ -1,5 +1,5 @@
 import styled  from 'styled-components'
-import { variant } from 'styled-system'
+import { variant, space, color, typography, layout } from 'styled-system'
 
 type Variant = "primary" | "secondary" | "pill" | "blank"
 type Size = "small" | "huge" | ""
@@ -10,6 +10,10 @@ interface ButtonProps {
 }
 
 const Button = styled.button<ButtonProps>`
+  ${space};
+  ${color};
+  ${typography};
+  ${layout};
   border: none;
   font-size: 1rem;
   display: inline-flex;

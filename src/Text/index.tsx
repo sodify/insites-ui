@@ -1,6 +1,11 @@
 import styled from 'styled-components'
+import { space, typography, color, layout } from 'styled-system'
 
 const Text = styled.p`
+  ${color};
+  ${space};
+  ${typography};
+  ${layout};
   font-size: 1rem;
   font-family: ${props => props.theme.fonts.heading};
   font-weight: ${props => props.theme.fontWeights.normal};
