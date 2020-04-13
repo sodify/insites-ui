@@ -11,4 +11,5 @@ export { default as Select } from './Select';
 export { default as Text } from './Text';
 export { default as Textarea } from './Textarea';
 export { default as theme } from './theme';
+export { ThemeProvider } from 'styled-components';
 export * from './Tooltip';
