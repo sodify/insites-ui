@@ -22,9 +22,9 @@ const Error = styled.div`
   color: ${props => props.theme.colors.red};
 `
 
-export {
-  Label,
-  Error
-}
+const FormControl: any = Box
 
-export default Box
+FormControl.Label = Label
+FormControl.Error = Error
+
+export default FormControl

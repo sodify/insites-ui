@@ -1,5 +1,5 @@
 import React from 'react'
-import FormControl, { Label, Error } from './'
+import FormControl from './'
 import Input from '../Input'
 import { ReactComponent as PhoneIcon } from '../assets/phone.svg'
 
@@ -9,22 +9,22 @@ export default {
 
 export const WithLabel = () => (
   <FormControl>
-    <Label htmlFor="displayName">Display name</Label>
+    <FormControl.Label htmlFor="displayName">Display name</FormControl.Label>
     <Input id="displayName" placeholder="Bryan Fury" />
   </FormControl>
 )
 
 export const WithError = () => (
   <FormControl>
-    <Label htmlFor="displayName">Display name</Label>
+    <FormControl.Label htmlFor="displayName">Display name</FormControl.Label>
     <Input id="displayName" placeholder="Bryan Fury" hasError />
-    <Error>Given name is too short.</Error>
+    <FormControl.Error>Given name is too short.</FormControl.Error>
   </FormControl>
 )
 
 export const WithIcon = () => (
   <FormControl>
-    <Label htmlFor="phoneNumber">Phone number</Label>
+    <FormControl.Label htmlFor="phoneNumber">Phone number</FormControl.Label>
     <Input id="phoneNumber" placeholder="+48 123 456 789" IconComponent={PhoneIcon} />
   </FormControl>
 )
