@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import FormControl, { Label, Error } from './'
+import FormControl from './'
 import { ThemeProvider } from 'styled-components'
 import theme from '../theme'
 import Input from '../Input'
@@ -10,9 +10,9 @@ describe('Form Control component', () => {
     const { getByText } = render(
       <ThemeProvider theme={theme}>
         <FormControl>
-          <Label htmlFor="displayName">Display name</Label>
+          <FormControl.Label htmlFor="displayName">Display name</FormControl.Label>
           <Input id="displayName" placeholder="Bryan Fury" hasError />
-          <Error>Given name is too short.</Error>
+          <FormControl.Error>Given name is too short.</FormControl.Error>
         </FormControl>
       </ThemeProvider>
     )
