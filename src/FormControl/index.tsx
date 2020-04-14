@@ -22,7 +22,9 @@ const Error = styled.div`
   color: ${props => props.theme.colors.red};
 `
 
-const FormControl: any = Box
+const FormControl: any = styled(Box)`
+  margin-bottom: 1rem;
+`
 
 FormControl.Label = Label
 FormControl.Error = Error
