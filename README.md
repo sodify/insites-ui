@@ -16,7 +16,7 @@ needs, feel free to use it.
 
 ## Installation
 
-Please refer to out [Getting started](https://insites-ui-docs.netlify.com/getting-started/) guide.
+Please refer to our [Getting started](https://insites-ui-docs.netlify.com/getting-started/) guide.
 
 ## Development
 
