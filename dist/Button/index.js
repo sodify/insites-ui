@@ -3,10 +3,10 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
     return cooked;
 };
 import styled from 'styled-components';
-import { variant } from 'styled-system';
-var Button = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  border: none;\n  font-size: 1rem;\n  display: inline-flex;\n  padding: 0.5rem 0.75rem;\n  color: ", ";\n  font-family: ", ";\n  cursor: pointer;\n  font-weight: ", ";\n  background-color: transparent;\n  \n  &:focus {\n    outline: none;\n  }\n  \n  ", "\n  \n  ", "\n"], ["\n  border: none;\n  font-size: 1rem;\n  display: inline-flex;\n  padding: 0.5rem 0.75rem;\n  color: ", ";\n  font-family: ", ";\n  cursor: pointer;\n  font-weight: ", ";\n  background-color: transparent;\n  \n  &:focus {\n    outline: none;\n  }\n  \n  ",
+import { variant, space, color, typography, layout } from 'styled-system';
+var Button = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  border: none;\n  font-size: 1rem;\n  display: inline-flex;\n  padding: 0.5rem 0.75rem;\n  color: ", ";\n  font-family: ", ";\n  cursor: pointer;\n  font-weight: ", ";\n  background-color: transparent;\n  \n  &:focus {\n    outline: none;\n  }\n  \n  ", "\n  \n  ", "\n"], ["\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  border: none;\n  font-size: 1rem;\n  display: inline-flex;\n  padding: 0.5rem 0.75rem;\n  color: ", ";\n  font-family: ", ";\n  cursor: pointer;\n  font-weight: ", ";\n  background-color: transparent;\n  \n  &:focus {\n    outline: none;\n  }\n  \n  ",
     "\n  \n  ",
-    "\n"])), function (props) { return props.theme.colors.heading; }, function (props) { return props.theme.fonts.body; }, function (props) { return props.theme.fontWeights.semiBold; }, function (props) { return variant({
+    "\n"])), space, color, typography, layout, function (props) { return props.theme.colors.heading; }, function (props) { return props.theme.fonts.body; }, function (props) { return props.theme.fontWeights.semiBold; }, function (props) { return variant({
     variants: {
         primary: {
             color: props.theme.colors.white,
