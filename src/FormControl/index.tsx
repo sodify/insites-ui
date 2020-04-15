@@ -8,18 +8,18 @@ interface LabelProps {
 const Label = styled.label<LabelProps>`
   display: block;
   font-size: 0.75rem;
-  font-family: ${props => props.theme.fonts.body};
-  font-weight: ${props => props.theme.fontWeights.semiBold};
+  font-family: ${(props) => props.theme.fonts.body};
+  font-weight: ${(props) => props.theme.fontWeights.semiBold};
   margin-bottom: 0.5rem;
 `
 
 const Error = styled.div`
   display: block;
   font-size: 0.75rem;
-  font-family: ${props => props.theme.fonts.body};
-  font-weight: ${props => props.theme.fontWeights.medium};
+  font-family: ${(props) => props.theme.fonts.body};
+  font-weight: ${(props) => props.theme.fontWeights.medium};
   margin-top: 0.5rem;
-  color: ${props => props.theme.colors.red};
+  color: ${(props) => props.theme.colors.red};
 `
 
 const FormControl: any = styled(Box)`

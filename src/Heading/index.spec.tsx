@@ -17,7 +17,9 @@ describe('Heading component', () => {
   it('renders with size variant', () => {
     const { getByText } = render(
       <ThemeProvider theme={theme}>
-        <Heading as="h2" size="l">Variants header</Heading>
+        <Heading as="h2" size="l">
+          Variants header
+        </Heading>
       </ThemeProvider>
     )
     expect(getByText('Variants header')).toBeTruthy()

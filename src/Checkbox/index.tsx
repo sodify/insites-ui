@@ -1,5 +1,5 @@
 import React from 'react'
-import styled  from 'styled-components'
+import styled from 'styled-components'
 import {
   ControlContainer,
   HiddenSelectableAppearance,
@@ -24,6 +24,8 @@ export default ({ id, children, checked, onChange, ...rest }: any) => (
   <ControlContainer>
     <HiddenCheckbox id={id} checked={checked} readOnly {...rest} />
     <StyledCheckbox checked={checked} onClick={onChange} />
-    <Label onClick={onChange} htmlFor={id}>{children}</Label>
+    <Label onClick={onChange} htmlFor={id}>
+      {children}
+    </Label>
   </ControlContainer>
 )

@@ -9,11 +9,7 @@ export const Basic = () => {
   const [isChecked, setIsChecked] = useState(false)
   const toggle = () => setIsChecked(!isChecked)
   return (
-    <Checkbox
-      id="rememberMe"
-      checked={isChecked}
-      onChange={toggle}
-    >
+    <Checkbox id="rememberMe" checked={isChecked} onChange={toggle}>
       Remember me
     </Checkbox>
   )

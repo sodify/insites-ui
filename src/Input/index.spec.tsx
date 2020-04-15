@@ -18,10 +18,7 @@ describe('Input component', () => {
   it('renders with tooltip', () => {
     const { getByPlaceholderText } = render(
       <ThemeProvider theme={theme}>
-        <Input
-          placeholder="Bryan Fury"
-          tooltip="Perpetual power generator?... Incredible."
-        />
+        <Input placeholder="Bryan Fury" tooltip="Perpetual power generator?... Incredible." />
       </ThemeProvider>
     )
     expect(getByPlaceholderText('Bryan Fury')).toBeTruthy()
@@ -30,10 +27,7 @@ describe('Input component', () => {
   it('renders with icon', () => {
     const { getByPlaceholderText } = render(
       <ThemeProvider theme={theme}>
-        <Input
-          placeholder="Bryan Fury"
-          IconComponent={HelpIcon}
-        />
+        <Input placeholder="Bryan Fury" IconComponent={HelpIcon} />
       </ThemeProvider>
     )
     expect(getByPlaceholderText('Bryan Fury')).toBeTruthy()
@@ -42,10 +36,7 @@ describe('Input component', () => {
   it('renders with error', () => {
     const { getByPlaceholderText } = render(
       <ThemeProvider theme={theme}>
-        <Input
-          placeholder="Bryan Fury"
-          hasError
-        />
+        <Input placeholder="Bryan Fury" hasError />
       </ThemeProvider>
     )
     expect(getByPlaceholderText('Bryan Fury')).toBeTruthy()

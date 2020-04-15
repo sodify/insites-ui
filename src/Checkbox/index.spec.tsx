@@ -7,14 +7,12 @@ import theme from '../theme'
 describe('Checkbox component', () => {
   it('renders', () => {
     let isChecked = false
-    const toggle = () => { isChecked = !isChecked }
+    const toggle = () => {
+      isChecked = !isChecked
+    }
     const { getByText } = render(
       <ThemeProvider theme={theme}>
-        <Checkbox
-          id="rememberMe"
-          checked={isChecked}
-          onChange={toggle}
-        >
+        <Checkbox id="rememberMe" checked={isChecked} onChange={toggle}>
           Remember me
         </Checkbox>
       </ThemeProvider>

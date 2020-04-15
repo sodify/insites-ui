@@ -1,4 +1,4 @@
-import styled  from 'styled-components'
+import styled from 'styled-components'
 import InputAppearance from '../mixins/InputAppearance'
 import ChevronDownIcon from './chevron-down.svg'
 

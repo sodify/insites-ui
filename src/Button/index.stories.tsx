@@ -7,15 +7,26 @@ export default {
   decorators: [withKnobs]
 }
 
-const getSizeSelect = () => select(
-  'Size',
-  ['', 'small', 'huge'],
-  '',
-  'SELECT_SIZE'
-)
+const getSizeSelect = () => select('Size', ['', 'small', 'huge'], '', 'SELECT_SIZE')
 
 export const Link = () => <Button size={getSizeSelect()}>Click me</Button>
-export const Primary = () => <Button variant="primary" size={getSizeSelect()}>Click me</Button>
-export const Secondary = () => <Button variant="secondary" size={getSizeSelect()}>Click me</Button>
-export const Pill = () => <Button variant="pill" size={getSizeSelect()}>Click me</Button>
-export const Blank = () => <Button variant="blank" size={getSizeSelect()}>Click me</Button>
+export const Primary = () => (
+  <Button variant="primary" size={getSizeSelect()}>
+    Click me
+  </Button>
+)
+export const Secondary = () => (
+  <Button variant="secondary" size={getSizeSelect()}>
+    Click me
+  </Button>
+)
+export const Pill = () => (
+  <Button variant="pill" size={getSizeSelect()}>
+    Click me
+  </Button>
+)
+export const Blank = () => (
+  <Button variant="blank" size={getSizeSelect()}>
+    Click me
+  </Button>
+)
