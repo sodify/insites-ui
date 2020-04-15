@@ -1,0 +1,24 @@
+{
+  "projectName": "insites-ui",
+  "projectOwner": "Tomasz Marciniak <tmarciniakm@gmail.com>",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "eslint",
+  "contributors": [
+    {
+      "login": "mrcnk",
+      "name": "Tomek Marciniak",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16132011?v=4",
+      "profile": "http://mrcnk.me",
+      "contributions": [
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
