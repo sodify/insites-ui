@@ -22,10 +22,13 @@ const InputWrapper = styled.div<InputProps>`
 const Icon = styled.div<IconProps>`
   position: absolute;
   top: 0.75rem;
-  
-  ${props => props.position === 'right' ? `
+
+  ${(props) =>
+    props.position === 'right'
+      ? `
     right: 1rem;
-  ` : `
+  `
+      : `
     left: 1rem;
   `}
 `
@@ -34,25 +37,25 @@ const Input = styled.input<InputProps>`
   ${InputAppearance};
   position: relative;
 
-  ${props => props.hasIcon && `
+  ${(props) =>
+    props.hasIcon &&
+    `
     padding-left: 3rem;
   `}
 `
 
 export default ({ hasError, IconComponent, tooltip, ...rest }: any) => (
   <InputWrapper hasError={hasError}>
-    <Input hasError={hasError} hasIcon={!!IconComponent} { ...rest } />
-    {tooltip && <Icon position="right">
-      <Tooltip.Trigger>
-        <HelpIcon />
-        <Tooltip.Message>{tooltip}</Tooltip.Message>
-      </Tooltip.Trigger>
-    </Icon>}
-    <Icon>
-      {IconComponent && <IconComponent />}
-    </Icon>
-    <Icon position="right">
-      {hasError && <AlertIcon />}
-    </Icon>
+    <Input hasError={hasError} hasIcon={!!IconComponent} {...rest} />
+    {tooltip && (
+      <Icon position="right">
+        <Tooltip.Trigger>
+          <HelpIcon />
+          <Tooltip.Message>{tooltip}</Tooltip.Message>
+        </Tooltip.Trigger>
+      </Icon>
+    )}
+    <Icon>{IconComponent && <IconComponent />}</Icon>
+    <Icon position="right">{hasError && <AlertIcon />}</Icon>
   </InputWrapper>
 )

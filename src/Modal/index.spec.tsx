@@ -1,16 +1,19 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Text from './'
+import Modal from './'
 import { ThemeProvider } from 'styled-components'
 import theme from '../theme'
 
-describe('Text component', () => {
+describe('Modal component', () => {
   it('renders correctly', () => {
     const { getByText } = render(
       <ThemeProvider theme={theme}>
-        <Text>Example text</Text>
+        <Modal isVisible={true} onHide={() => {}}>
+          I'm a modal
+          <Modal.Footer>Footer</Modal.Footer>
+        </Modal>
       </ThemeProvider>
     )
-    expect(getByText('Example text')).toBeTruthy()
+    expect(getByText("I'm a modal")).toBeTruthy()
   })
 })

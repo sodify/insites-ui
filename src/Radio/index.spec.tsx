@@ -8,12 +8,7 @@ describe('Radio component', () => {
   it('renders correctly', () => {
     const { getByText } = render(
       <ThemeProvider theme={theme}>
-        <Radio
-          id="sizeL"
-          name="size"
-          value="l"
-          defaultChecked={true}
-        >
+        <Radio id="sizeL" name="size" value="l" defaultChecked={true}>
           L size
         </Radio>
       </ThemeProvider>

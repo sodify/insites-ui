@@ -1,6 +1,7 @@
-declare type Variant = "primary" | "secondary" | "pill" | "blank";
-declare type Size = "small" | "huge" | "";
-interface ButtonProps {
+import { SpaceProps } from 'styled-system';
+declare type Variant = 'primary' | 'secondary' | 'pill' | 'blank';
+declare type Size = 'small' | 'huge' | '';
+interface ButtonProps extends SpaceProps {
     variant?: Variant;
     size?: Size;
 }

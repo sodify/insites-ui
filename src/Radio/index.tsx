@@ -1,5 +1,5 @@
 import React from 'react'
-import styled  from 'styled-components'
+import styled from 'styled-components'
 import {
   ControlContainer,
   HiddenSelectableAppearance,
@@ -11,7 +11,7 @@ interface CheckboxProps {
   checked?: boolean
 }
 
-const HiddenRadio= styled.input.attrs({ type: 'radio' })`
+const HiddenRadio = styled.input.attrs({ type: 'radio' })`
   ${HiddenSelectableAppearance};
 `
 
@@ -24,6 +24,8 @@ export default ({ id, children, checked, onChange, ...rest }: any) => (
   <ControlContainer>
     <HiddenRadio id={id} checked={checked} {...rest} />
     <StyledRadio checked={checked} onClick={onChange} />
-    <Label onClick={onChange} htmlFor={id}>{children}</Label>
+    <Label onClick={onChange} htmlFor={id}>
+      {children}
+    </Label>
   </ControlContainer>
 )
