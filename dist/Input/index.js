@@ -31,18 +31,25 @@ import Tooltip from '../Tooltip';
 import { ReactComponent as AlertIcon } from './alert-circle.svg';
 import { ReactComponent as HelpIcon } from './help.svg';
 var InputWrapper = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
-var Icon = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0.75rem;\n  \n  ", "\n"], ["\n  position: absolute;\n  top: 0.75rem;\n  \n  ",
-    "\n"])), function (props) { return props.position === 'right' ? "\n    right: 1rem;\n  " : "\n    left: 1rem;\n  "; });
+var Icon = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0.75rem;\n\n  ", "\n"], ["\n  position: absolute;\n  top: 0.75rem;\n\n  ",
+    "\n"])), function (props) {
+    return props.position === 'right'
+        ? "\n    right: 1rem;\n  "
+        : "\n    left: 1rem;\n  ";
+});
 var Input = styled.input(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  ", ";\n  position: relative;\n\n  ", "\n"], ["\n  ", ";\n  position: relative;\n\n  ",
-    "\n"])), InputAppearance, function (props) { return props.hasIcon && "\n    padding-left: 3rem;\n  "; });
+    "\n"])), InputAppearance, function (props) {
+    return props.hasIcon &&
+        "\n    padding-left: 3rem;\n  ";
+});
 export default (function (_a) {
     var hasError = _a.hasError, IconComponent = _a.IconComponent, tooltip = _a.tooltip, rest = __rest(_a, ["hasError", "IconComponent", "tooltip"]);
     return (React.createElement(InputWrapper, { hasError: hasError },
         React.createElement(Input, __assign({ hasError: hasError, hasIcon: !!IconComponent }, rest)),
-        tooltip && React.createElement(Icon, { position: "right" },
+        tooltip && (React.createElement(Icon, { position: "right" },
             React.createElement(Tooltip.Trigger, null,
                 React.createElement(HelpIcon, null),
-                React.createElement(Tooltip.Message, null, tooltip))),
+                React.createElement(Tooltip.Message, null, tooltip)))),
         React.createElement(Icon, null, IconComponent && React.createElement(IconComponent, null)),
         React.createElement(Icon, { position: "right" }, hasError && React.createElement(AlertIcon, null))));
 });
