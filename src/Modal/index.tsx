@@ -39,6 +39,10 @@ const Footer = styled(Box)`
   justify-content: flex-end;
 `
 
+export const stopPropagation = (e: any) => {
+  e.stopPropagation()
+}
+
 interface ModalProps {
   isVisible: boolean
   onHide: any
@@ -46,10 +50,6 @@ interface ModalProps {
 }
 
 const Modal = ({ isVisible, onHide, children }: ModalProps) => {
-  const stopPropagation = (e: any) => {
-    e.stopPropagation()
-  }
-
   return isVisible
     ? ReactDOM.createPortal(
         <ModalOverlay onClick={onHide}>
