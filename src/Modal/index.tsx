@@ -16,7 +16,7 @@ const ModalOverlay = styled.div`
   min-height: 100vh;
   background-color: ${(props) => rgba(props.theme.colors.darkNavy, 0.25)};
   cursor: pointer;
-  z-index: 0;
+  z-index: 2;
   animation: ${fadeIn} 0.15s ease-out;
 `
 
@@ -25,7 +25,7 @@ const ModalContainer = styled(Box)`
   width: 100%;
   min-height: 10rem;
   background-color: ${(props) => props.theme.colors.white};
-  z-index: 1;
+  z-index: 2;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem ${(props) => rgba(props.theme.colors.darkNavy, 0.075)};
   padding: 2rem;
