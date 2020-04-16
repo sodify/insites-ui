@@ -1,6 +1,6 @@
 # Insites UI
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![CircleCI](https://circleci.com/gh/insites-co/insites-ui.svg?style=svg)](https://circleci.com/gh/insites-co/insites-ui)
@@ -49,6 +49,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://mrcnk.me"><img src="https://avatars3.githubusercontent.com/u/16132011?v=4" width="100px;" alt=""/><br /><sub><b>Tomek Marciniak</b></sub></a><br /><a href="https://github.com/insites-co/insites-ui/issues?q=author%3Amrcnk" title="Bug reports">🐛</a> <a href="https://github.com/insites-co/insites-ui/commits?author=mrcnk" title="Code">💻</a> <a href="https://github.com/insites-co/insites-ui/commits?author=mrcnk" title="Documentation">📖</a> <a href="#design-mrcnk" title="Design">🎨</a> <a href="#ideas-mrcnk" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="http://rago4.github.io"><img src="https://avatars0.githubusercontent.com/u/19167236?v=4" width="100px;" alt=""/><br /><sub><b>Rafał Goławski</b></sub></a><br /><a href="https://github.com/insites-co/insites-ui/commits?author=rago4" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/yahoor1"><img src="https://avatars3.githubusercontent.com/u/8437765?v=4" width="100px;" alt=""/><br /><sub><b>Jan Osio</b></sub></a><br /><a href="https://github.com/insites-co/insites-ui/commits?author=yahoor1" title="Code">💻</a></td>
   </tr>
 </table>
 
