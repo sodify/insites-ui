@@ -1,4 +1,5 @@
 import React from 'react';
+export declare const stopPropagation: (e: any) => void;
 interface ModalProps {
     isVisible: boolean;
     onHide: any;
