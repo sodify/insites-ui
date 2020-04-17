@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
 import { rgba } from 'polished'
 import Box from '../Box'
+import useClickOutside from '../hooks/useClickOutside'
 
 interface DropdownProps {
   children?: React.ReactNode
@@ -10,10 +11,12 @@ interface DropdownProps {
 
 const StyledDropdown = styled(Box)`
   position: relative;
+  display: inline-flex;
 `
 
 const Content = styled(Box)`
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   bottom: -4rem;
   box-shadow: 0 0 1rem ${(props) => rgba(props.theme.colors.darkNavy, 0.1)};
@@ -21,11 +24,13 @@ const Content = styled(Box)`
   border-radius: 0.5rem;
   min-width: 10rem;
   padding: 1rem;
+  transition: visibility 0.1s ease-out, opacity 0.1s ease-out;
 
   ${(props) =>
     props.isVisible &&
     `
-    display: block;
+    visibility: visible;
+    opacity: 1;
   `}
 
   &::after {
@@ -49,13 +54,20 @@ const Dropdown = ({ children, Trigger }: DropdownProps) => {
   const toggle = () => {
     setIsVisible(!isVisible)
   }
+  const contentRef = useRef(null)
+  useClickOutside((event: any) => {
+    const clickedTrigger = event?.path[1]?.classList?.contains('dropdown-trigger')
+    if (!clickedTrigger) setIsVisible(false)
+  }, contentRef)
 
   return (
     <StyledDropdown>
-      <StyledTrigger onClick={toggle}>
+      <StyledTrigger className="dropdown-trigger" onClick={toggle}>
         <Trigger />
       </StyledTrigger>
-      <Content isVisible={isVisible}>{children}</Content>
+      <Content isVisible={isVisible} ref={contentRef}>
+        {children}
+      </Content>
     </StyledDropdown>
   )
 }

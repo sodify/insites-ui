@@ -9,7 +9,7 @@ export default {
 export const Basic = () => (
   <Dropdown
     Trigger={() => (
-      <Button variant="blank" size="small">
+      <Button variant="secondary" size="small">
         Click me
       </Button>
     )}

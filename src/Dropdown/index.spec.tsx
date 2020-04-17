@@ -12,7 +12,7 @@ describe('Dropdown component', () => {
       </ThemeProvider>
     )
     expect(getByText('Click me')).toBeTruthy()
-    expect(getByText('Hidden content')).toHaveStyle('display: none')
+    expect(getByText('Hidden content')).toHaveStyle('visibility: hidden')
   })
 
   it('toggles hidden content', () => {
@@ -22,6 +22,6 @@ describe('Dropdown component', () => {
       </ThemeProvider>
     )
     fireEvent.click(getByText('Click me'))
-    expect(getByText('Hidden content')).toHaveStyle('display: block')
+    expect(getByText('Hidden content')).toHaveStyle('visibility: visible')
   })
 })
