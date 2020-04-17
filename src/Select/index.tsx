@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import InputAppearance from '../mixins/InputAppearance'
-import ChevronDownIcon from './chevron-down.svg'
+import ChevronDownIcon from '../assets/chevron-down.svg'
 
 interface SelectProps {
   hasError?: boolean
