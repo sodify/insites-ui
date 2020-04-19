@@ -26,6 +26,7 @@ const Content = styled(Box)`
   min-width: 10rem;
   padding: 1rem;
   transition: visibility 0.1s ease-out, opacity 0.1s ease-out;
+  margin-top: 0.5rem;
 
   ${(props) =>
     props.isVisible &&
