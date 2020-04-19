@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { ControlContainer, HiddenSelectableAppearance, Label } from '../mixins/SelectableAppearance'
+import { ControlContainer, HiddenSelectableAppearance, Label, ComponentProps } from '../mixins/SelectableAppearance'
 import { rgba } from 'polished'
 
 interface CheckboxProps {
@@ -44,7 +44,7 @@ const StyledToggle = styled.div<CheckboxProps>`
     `}
 `
 
-export default React.forwardRef((props: any, ref?: any) => {
+export default React.forwardRef((props: ComponentProps, ref?: any) => {
   const { id, children, checked, onChange, ...rest } = props
   return (
     <ControlContainer>

@@ -1,12 +1,12 @@
 {
   "name": "insites-ui",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "license": "MIT",
   "author": "Tomasz Marciniak <tmarciniakm@gmail.com>",
   "homepage": "https://github.com/insites-co/insites-ui",
   "main": "dist/index.js",
   "scripts": {
-    "test": "react-scripts test",
+    "test": "react-scripts test --silent",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "dist": "tsc --noEmit false && copyfiles -u 1 ./src/**/*.svg dist",

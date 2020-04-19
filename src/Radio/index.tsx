@@ -4,7 +4,8 @@ import {
   ControlContainer,
   HiddenSelectableAppearance,
   SelectableAppearance,
-  Label
+  Label,
+  ComponentProps
 } from '../mixins/SelectableAppearance'
 
 interface CheckboxProps {
@@ -20,7 +21,7 @@ const StyledRadio = styled.div<CheckboxProps>`
   border-radius: 50%;
 `
 
-export default React.forwardRef((props: any, ref?: any) => {
+export default React.forwardRef((props: ComponentProps, ref?: any) => {
   const { id, children, checked, onChange, ...rest } = props
   return (
     <ControlContainer>

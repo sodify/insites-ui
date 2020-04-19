@@ -1,9 +1,16 @@
 import styled, { css } from 'styled-components'
 import { hideVisually, rgba } from 'polished'
-import CheckIcon from './check.svg'
 
 interface SelectableProps {
   checked?: boolean
+}
+
+export interface ComponentProps {
+  id?: string
+  children?: any
+  checked?: boolean
+  onChange?: any
+  rest?: any[]
 }
 
 const HiddenSelectableAppearance = css`
@@ -23,7 +30,7 @@ const SelectableAppearance = css<SelectableProps>`
     props.checked &&
     `
     background-color: ${props.theme.colors.primary};
-    background-image: url(${CheckIcon});
+    background-image: url(data:image/svg+xml;base64,CiAgPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJNMTMuMyA0TDYgMTEuMyAyLjcgOCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwvc3ZnPgo=);
     background-repeat: no-repeat;
     background-position: center center;
     border: 1px ${props.theme.colors.white} solid;
