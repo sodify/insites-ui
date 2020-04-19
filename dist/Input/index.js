@@ -58,9 +58,9 @@ export default React.forwardRef(function (props, ref) {
             React.createElement(Tooltip.Trigger, null,
                 React.createElement(TooltipIcon, null),
                 React.createElement(Tooltip.Message, null, tooltip)))),
-        !!IconComponent && React.createElement(Icon, null,
-            React.createElement(IconComponent, null)),
-        !!hasError && React.createElement(Icon, { position: "right" },
-            React.createElement(AlertIcon, null))));
+        !!IconComponent && (React.createElement(Icon, null,
+            React.createElement(IconComponent, null))),
+        !!hasError && (React.createElement(Icon, { position: "right" },
+            React.createElement(AlertIcon, null)))));
 });
 var templateObject_1, templateObject_2, templateObject_3;
