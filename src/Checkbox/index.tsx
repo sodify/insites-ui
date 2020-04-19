@@ -20,7 +20,7 @@ const StyledCheckbox = styled.div<CheckboxProps>`
   border-radius: 0.25rem;
 `
 
-export default React.forwardRef(({ id, children, checked, onChange, ...rest }: any, ref) => (
+export default React.forwardRef(({ id, children, checked, onChange, ...rest }: any, ref?: any) => (
   <ControlContainer>
     <HiddenCheckbox id={id} checked={checked} ref={ref} readOnly {...rest} />
     <StyledCheckbox checked={checked} onClick={onChange} />

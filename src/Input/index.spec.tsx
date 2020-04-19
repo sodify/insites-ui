@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { render } from '@testing-library/react'
 import Input from './'
 import { ThemeProvider } from 'styled-components'
@@ -37,6 +37,16 @@ describe('Input component', () => {
     const { getByPlaceholderText } = render(
       <ThemeProvider theme={theme}>
         <Input placeholder="Bryan Fury" hasError />
+      </ThemeProvider>
+    )
+    expect(getByPlaceholderText('Bryan Fury')).toBeTruthy()
+  })
+
+  it('handles the ref and other props simultaneously', () => {
+    const mockRef = jest.fn()
+    const { getByPlaceholderText } = render(
+      <ThemeProvider theme={theme}>
+        <Input placeholder="Bryan Fury" ref={mockRef} hasError />
       </ThemeProvider>
     )
     expect(getByPlaceholderText('Bryan Fury')).toBeTruthy()
