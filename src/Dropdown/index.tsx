@@ -19,7 +19,7 @@ const Content = styled(Box)`
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   box-shadow: 0 0 1rem ${(props) => rgba(props.theme.colors.darkNavy, 0.1)};
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 0.5rem;
