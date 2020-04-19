@@ -44,9 +44,9 @@ const Input = styled.input<InputProps>`
   `}
 `
 
-export default ({ hasError, IconComponent, tooltip, ...rest }: any) => (
+export default React.forwardRef(({ hasError, IconComponent, tooltip, ...rest }: any, ref) => (
   <InputWrapper hasError={hasError}>
-    <Input hasError={hasError} hasIcon={!!IconComponent} {...rest} />
+    <Input hasError={hasError} hasIcon={!!IconComponent} ref={ref} {...rest} />
     {tooltip && (
       <Icon position="right">
         <Tooltip.Trigger>
@@ -58,4 +58,4 @@ export default ({ hasError, IconComponent, tooltip, ...rest }: any) => (
     <Icon>{IconComponent && <IconComponent />}</Icon>
     <Icon position="right">{hasError && <AlertIcon />}</Icon>
   </InputWrapper>
-)
+))
