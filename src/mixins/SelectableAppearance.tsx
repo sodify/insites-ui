@@ -10,7 +10,7 @@ export interface ComponentProps {
   children?: any
   checked?: boolean
   onChange?: any
-  rest?: any[]
+  [x: string]: any
 }
 
 const HiddenSelectableAppearance = css`

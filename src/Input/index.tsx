@@ -73,7 +73,7 @@ interface ComponentProps {
   hasError?: boolean
   IconComponent?: any
   tooltip?: string
-  rest: any[]
+  [x: string]: any
 }
 
 export default React.forwardRef((props: ComponentProps, ref?: any) => {
