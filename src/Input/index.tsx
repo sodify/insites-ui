@@ -44,18 +44,21 @@ const Input = styled.input<InputProps>`
   `}
 `
 
-export default React.forwardRef(({ hasError, IconComponent, tooltip, ...rest }: any, ref?: any) => (
-  <InputWrapper hasError={hasError}>
-    <Input hasError={hasError} hasIcon={!!IconComponent} ref={ref} {...rest} />
-    {tooltip && (
-      <Icon position="right">
-        <Tooltip.Trigger>
-          <HelpIcon />
-          <Tooltip.Message>{tooltip}</Tooltip.Message>
-        </Tooltip.Trigger>
-      </Icon>
-    )}
-    <Icon>{IconComponent && <IconComponent />}</Icon>
-    <Icon position="right">{hasError && <AlertIcon />}</Icon>
-  </InputWrapper>
-))
+export default React.forwardRef((props: any, ref?: any) => {
+  const { hasError, IconComponent, tooltip, ...rest } = props
+  return (
+    <InputWrapper hasError={hasError}>
+      <Input hasError={hasError} hasIcon={!!IconComponent} ref={ref} {...rest} />
+      {tooltip && (
+        <Icon position="right">
+          <Tooltip.Trigger>
+            <HelpIcon />
+            <Tooltip.Message>{tooltip}</Tooltip.Message>
+          </Tooltip.Trigger>
+        </Icon>
+      )}
+      <Icon>{IconComponent && <IconComponent />}</Icon>
+      <Icon position="right">{hasError && <AlertIcon />}</Icon>
+    </InputWrapper>
+  )
+})

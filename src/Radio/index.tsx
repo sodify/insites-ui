@@ -20,12 +20,15 @@ const StyledRadio = styled.div<CheckboxProps>`
   border-radius: 50%;
 `
 
-export default React.forwardRef(({ id, children, checked, onChange, ...rest }: any, ref?: any) => (
-  <ControlContainer>
-    <HiddenRadio id={id} checked={checked} ref={ref} readOnly {...rest} />
-    <StyledRadio checked={checked} onClick={onChange} />
-    <Label onClick={onChange} htmlFor={id}>
-      {children}
-    </Label>
-  </ControlContainer>
-))
+export default React.forwardRef((props: any, ref?: any) => {
+  const { id, children, checked, onChange, ...rest } = props
+  return (
+    <ControlContainer>
+      <HiddenRadio id={id} checked={checked} ref={ref} readOnly {...rest} />
+      <StyledRadio checked={checked} onClick={onChange} />
+      <Label onClick={onChange} htmlFor={id}>
+        {children}
+      </Label>
+    </ControlContainer>
+  )
+})

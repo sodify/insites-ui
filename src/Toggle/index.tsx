@@ -44,12 +44,15 @@ const StyledToggle = styled.div<CheckboxProps>`
     `}
 `
 
-export default React.forwardRef(({ id, children, checked, onChange, ...rest }: any, ref?: any) => (
-  <ControlContainer>
-    <HiddenToggle id={id} checked={checked} ref={ref} readOnly {...rest} />
-    <StyledToggle checked={checked} onClick={onChange} />
-    <Label onClick={onChange} htmlFor={id}>
-      {children}
-    </Label>
-  </ControlContainer>
-))
+export default React.forwardRef((props: any, ref?: any) => {
+  const { id, children, checked, onChange, ...rest } = props
+  return (
+    <ControlContainer>
+      <HiddenToggle id={id} checked={checked} ref={ref} readOnly {...rest} />
+      <StyledToggle checked={checked} onClick={onChange} />
+      <Label onClick={onChange} htmlFor={id}>
+        {children}
+      </Label>
+    </ControlContainer>
+  )
+})

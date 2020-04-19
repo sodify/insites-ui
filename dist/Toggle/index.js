@@ -33,8 +33,8 @@ var StyledToggle = styled.div(templateObject_3 || (templateObject_3 = __makeTemp
     "\n"])), function (props) { return rgba(props.theme.colors.grey, 0.75); }, rgba('#000', 0.04), function (props) { return props.theme.colors.white; }, function (props) {
     return props.checked && css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n      background-color: ", ";\n\n      &::after {\n        left: calc(100% - 1.375rem);\n      }\n    "], ["\n      background-color: ", ";\n\n      &::after {\n        left: calc(100% - 1.375rem);\n      }\n    "])), props.theme.colors.primary);
 });
-export default React.forwardRef(function (_a, ref) {
-    var id = _a.id, children = _a.children, checked = _a.checked, onChange = _a.onChange, rest = __rest(_a, ["id", "children", "checked", "onChange"]);
+export default React.forwardRef(function (props, ref) {
+    var id = props.id, children = props.children, checked = props.checked, onChange = props.onChange, rest = __rest(props, ["id", "children", "checked", "onChange"]);
     return (React.createElement(ControlContainer, null,
         React.createElement(HiddenToggle, __assign({ id: id, checked: checked, ref: ref, readOnly: true }, rest)),
         React.createElement(StyledToggle, { checked: checked, onClick: onChange }),
