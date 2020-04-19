@@ -29,10 +29,10 @@ import styled from 'styled-components';
 import { ControlContainer, HiddenSelectableAppearance, SelectableAppearance, Label } from '../mixins/SelectableAppearance';
 var HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", ";\n"], ["\n  ", ";\n"])), HiddenSelectableAppearance);
 var StyledCheckbox = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  ", ";\n  border-radius: 0.25rem;\n"], ["\n  ", ";\n  border-radius: 0.25rem;\n"])), SelectableAppearance);
-export default (function (_a) {
+export default React.forwardRef(function (_a, ref) {
     var id = _a.id, children = _a.children, checked = _a.checked, onChange = _a.onChange, rest = __rest(_a, ["id", "children", "checked", "onChange"]);
     return (React.createElement(ControlContainer, null,
-        React.createElement(HiddenCheckbox, __assign({ id: id, checked: checked, readOnly: true }, rest)),
+        React.createElement(HiddenCheckbox, __assign({ id: id, checked: checked, ref: ref, readOnly: true }, rest)),
         React.createElement(StyledCheckbox, { checked: checked, onClick: onChange }),
         React.createElement(Label, { onClick: onChange, htmlFor: id }, children)));
 });

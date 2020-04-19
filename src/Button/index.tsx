@@ -16,7 +16,7 @@ const Button = styled.button<ButtonProps>`
   ${layout};
   border: none;
   font-size: 1rem;
-  display: inline-flex;
+  display: inline-block;
   padding: 0.5rem 0.75rem;
   color: ${(props) => props.theme.colors.heading};
   font-family: ${(props) => props.theme.fonts.body};

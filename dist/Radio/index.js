@@ -29,10 +29,10 @@ import styled from 'styled-components';
 import { ControlContainer, HiddenSelectableAppearance, SelectableAppearance, Label } from '../mixins/SelectableAppearance';
 var HiddenRadio = styled.input.attrs({ type: 'radio' })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", ";\n"], ["\n  ", ";\n"])), HiddenSelectableAppearance);
 var StyledRadio = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  ", ";\n  border-radius: 50%;\n"], ["\n  ", ";\n  border-radius: 50%;\n"])), SelectableAppearance);
-export default (function (_a) {
+export default React.forwardRef(function (_a, ref) {
     var id = _a.id, children = _a.children, checked = _a.checked, onChange = _a.onChange, rest = __rest(_a, ["id", "children", "checked", "onChange"]);
     return (React.createElement(ControlContainer, null,
-        React.createElement(HiddenRadio, __assign({ id: id, checked: checked }, rest)),
+        React.createElement(HiddenRadio, __assign({ id: id, checked: checked, ref: ref, readOnly: true }, rest)),
         React.createElement(StyledRadio, { checked: checked, onClick: onChange }),
         React.createElement(Label, { onClick: onChange, htmlFor: id }, children)));
 });

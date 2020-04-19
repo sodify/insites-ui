@@ -42,10 +42,10 @@ var Input = styled.input(templateObject_3 || (templateObject_3 = __makeTemplateO
     return props.hasIcon &&
         "\n    padding-left: 3rem;\n  ";
 });
-export default (function (_a) {
+export default React.forwardRef(function (_a, ref) {
     var hasError = _a.hasError, IconComponent = _a.IconComponent, tooltip = _a.tooltip, rest = __rest(_a, ["hasError", "IconComponent", "tooltip"]);
     return (React.createElement(InputWrapper, { hasError: hasError },
-        React.createElement(Input, __assign({ hasError: hasError, hasIcon: !!IconComponent }, rest)),
+        React.createElement(Input, __assign({ hasError: hasError, hasIcon: !!IconComponent, ref: ref }, rest)),
         tooltip && (React.createElement(Icon, { position: "right" },
             React.createElement(Tooltip.Trigger, null,
                 React.createElement(HelpIcon, null),

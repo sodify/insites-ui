@@ -1,3 +1,3 @@
-/// <reference types="react" />
-declare const _default: ({ id, children, checked, onChange, ...rest }: any) => JSX.Element;
+import React from 'react';
+declare const _default: React.ForwardRefExoticComponent<Pick<any, string | number | symbol> & React.RefAttributes<unknown>>;
 export default _default;

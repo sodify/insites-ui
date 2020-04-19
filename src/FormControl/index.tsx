@@ -11,6 +11,7 @@ const Label = styled.label<LabelProps>`
   font-family: ${(props) => props.theme.fonts.body};
   font-weight: ${(props) => props.theme.fontWeights.semiBold};
   margin-bottom: 0.5rem;
+  color: ${(props) => props.theme.colors.text};
 `
 
 const Error = styled.div`
