@@ -6,7 +6,7 @@ export interface ComponentProps {
     children?: any;
     checked?: boolean;
     onChange?: any;
-    rest?: any[];
+    [x: string]: any;
 }
 declare const HiddenSelectableAppearance: import("styled-components").FlattenSimpleInterpolation;
 declare const SelectableAppearance: import("styled-components").FlattenInterpolation<import("styled-components").ThemedStyledProps<SelectableProps, any>>;
