@@ -14,6 +14,8 @@ export const Basic = () => (
       </Button>
     )}
   >
-    Hidden content
+    <Button>First option</Button>
+    <Button>Second option</Button>
+    <Button>Third option</Button>
   </Dropdown>
 )

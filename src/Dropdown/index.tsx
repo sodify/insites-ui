@@ -10,15 +10,16 @@ interface DropdownProps {
 }
 
 const StyledDropdown = styled(Box)`
-  position: relative;
-  display: inline-flex;
+  display: inline-block;
 `
 
 const Content = styled(Box)`
+  display: flex;
+  flex-direction: column;
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  bottom: -4rem;
+  z-index: 2;
   box-shadow: 0 0 1rem ${(props) => rgba(props.theme.colors.darkNavy, 0.1)};
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 0.5rem;
@@ -46,6 +47,7 @@ const Content = styled(Box)`
 `
 
 const StyledTrigger = styled(Box)`
+  position: relative;
   cursor: pointer;
 `
 
