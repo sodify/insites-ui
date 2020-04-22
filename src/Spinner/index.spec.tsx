@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Spinner from './'
 import { ThemeProvider } from 'styled-components'
 import theme from '../theme'
+import Spinner from './'
 
 describe('Spinner component', () => {
   it('renders correctly', () => {
