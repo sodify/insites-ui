@@ -1,12 +1,13 @@
 # Insites UI
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 [![CircleCI](https://circleci.com/gh/insites-co/insites-ui.svg?style=svg)](https://circleci.com/gh/insites-co/insites-ui)
 [![npm](https://img.shields.io/npm/v/insites-ui)](https://www.npmjs.com/package/insites-ui)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9399a73d71d005fa8bd4/maintainability)](https://codeclimate.com/github/insites-co/insites-ui/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9399a73d71d005fa8bd4/test_coverage)](https://codeclimate.com/github/insites-co/insites-ui/test_coverage)
+![Bundle size](https://badgen.net/bundlephobia/minzip/insites-ui)
 
 Insites UI is an opinionated UI components library, powered by TypeScript, 
 Styled Components and Styled System. It comes with source version in TypeScript,
@@ -20,7 +21,7 @@ needs, feel free to use it.
 
 ## Installation
 
-Please refer to our [Getting started](https://insites-ui-docs.netlify.com/getting-started/) guide.
+Please refer to our [Getting started](https://insites.sodify.co/getting-started/) guide.
 
 ## Development
 
@@ -34,9 +35,9 @@ If you'd like to help us and contribute, then here's how to run the development 
 
 ## Links
 
-[Documentation](https://insites-ui-docs.netlify.com/)
+[Documentation](https://insites.sodify.co/)
 
-[Storybook](https://insites-ui.netlify.com/)
+[Storybook](https://insites-storybook.sodify.co/)
 
 ## Contributors ✨
 
