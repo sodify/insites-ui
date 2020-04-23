@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
-import { hideVisually, rgba } from 'polished'
+import rgba from 'polished/lib/color/rgba'
+import hideVisually from 'polished/lib/mixins/hideVisually'
 
 interface SelectableProps {
   checked?: boolean

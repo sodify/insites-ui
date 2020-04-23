@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
-import { rgba } from 'polished'
+import rgba from 'polished/lib/color/rgba'
 import Box from '../Box'
 import { fadeIn, slideDown } from '../mixins/animations'
 
