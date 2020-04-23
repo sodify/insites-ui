@@ -3,7 +3,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-[![CircleCI](https://circleci.com/gh/insites-co/insites-ui.svg?style=svg)](https://circleci.com/gh/insites-co/insites-ui)
+[![CircleCI](https://circleci.com/gh/sodify/insites-ui.svg?style=svg)](https://circleci.com/gh/sodify/insites-ui)
 [![npm](https://img.shields.io/npm/v/insites-ui)](https://www.npmjs.com/package/insites-ui)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9399a73d71d005fa8bd4/maintainability)](https://codeclimate.com/github/insites-co/insites-ui/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9399a73d71d005fa8bd4/test_coverage)](https://codeclimate.com/github/insites-co/insites-ui/test_coverage)
