@@ -16,6 +16,7 @@ export { default as theme } from './theme'
 export { ThemeProvider } from 'styled-components'
 export { default as Toggle } from './Toggle'
 export { default as Tooltip } from './Tooltip'
+export { default as Spinner } from './Spinner'
 
 export { default as useClickOutside } from './hooks/useClickOutside'
 export { default as useModal } from './hooks/useModal'
