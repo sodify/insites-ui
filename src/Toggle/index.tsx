@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { ControlContainer, HiddenSelectableAppearance, Label, ComponentProps } from '../mixins/SelectableAppearance'
-import { rgba } from 'polished'
+import rgba from 'polished/lib/color/rgba'
 
 interface CheckboxProps {
   checked?: boolean

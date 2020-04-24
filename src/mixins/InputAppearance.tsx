@@ -1,5 +1,6 @@
 import { css } from 'styled-components'
-import { rgba, lighten } from 'polished'
+import rgba from 'polished/lib/color/rgba'
+import lighten from 'polished/lib/color/lighten'
 
 interface InputAppearanceProps {
   hasError?: boolean
