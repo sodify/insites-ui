@@ -3,7 +3,8 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
     return cooked;
 };
 import styled, { css } from 'styled-components';
-import { hideVisually, rgba } from 'polished';
+import rgba from 'polished/lib/color/rgba';
+import hideVisually from 'polished/lib/mixins/hideVisually';
 var HiddenSelectableAppearance = css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", ";\n"], ["\n  ", ";\n"])), hideVisually());
 var SelectableAppearance = css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  width: 1.25rem;\n  height: 1.25rem;\n  border: 1px ", " solid;\n  background-color: ", ";\n  transition: background-color 0.1s ease-out;\n  box-shadow: 0 0.125rem 0.25rem ", ";\n  cursor: pointer;\n\n  ", "\n"], ["\n  width: 1.25rem;\n  height: 1.25rem;\n  border: 1px ", " solid;\n  background-color: ", ";\n  transition: background-color 0.1s ease-out;\n  box-shadow: 0 0.125rem 0.25rem ", ";\n  cursor: pointer;\n\n  ",
     "\n"])), function (props) { return props.theme.colors.grey; }, function (props) { return props.theme.colors.white; }, rgba('#000', 0.04), function (props) {

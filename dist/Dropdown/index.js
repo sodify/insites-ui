@@ -4,7 +4,7 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
-import { rgba } from 'polished';
+import rgba from 'polished/lib/color/rgba';
 import Box from '../Box';
 import useClickOutside from '../hooks/useClickOutside';
 var StyledDropdown = styled(Box)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: inline-block;\n"], ["\n  display: inline-block;\n"])));

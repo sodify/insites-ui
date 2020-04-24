@@ -27,7 +27,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { ControlContainer, HiddenSelectableAppearance, Label } from '../mixins/SelectableAppearance';
-import { rgba } from 'polished';
+import rgba from 'polished/lib/color/rgba';
 var HiddenToggle = styled.input.attrs({ type: 'checkbox' })(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  ", ";\n"], ["\n  ", ";\n"])), HiddenSelectableAppearance);
 var StyledToggle = styled.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  width: 2.75rem;\n  height: 1.5rem;\n  background-color: ", ";\n  transition: background-color 0.1s ease-out;\n  box-shadow: 0 0.125rem 0.25rem ", ";\n  cursor: pointer;\n  border-radius: 2.75rem;\n  position: relative;\n\n  &::after {\n    content: '';\n    height: 1.25rem;\n    width: 1.25rem;\n    background-color: ", ";\n    transition: left 0.1s ease-out;\n    border-radius: 50%;\n    position: absolute;\n    top: 0.125rem;\n    left: 0.125rem;\n  }\n\n  ", "\n"], ["\n  width: 2.75rem;\n  height: 1.5rem;\n  background-color: ", ";\n  transition: background-color 0.1s ease-out;\n  box-shadow: 0 0.125rem 0.25rem ", ";\n  cursor: pointer;\n  border-radius: 2.75rem;\n  position: relative;\n\n  &::after {\n    content: '';\n    height: 1.25rem;\n    width: 1.25rem;\n    background-color: ", ";\n    transition: left 0.1s ease-out;\n    border-radius: 50%;\n    position: absolute;\n    top: 0.125rem;\n    left: 0.125rem;\n  }\n\n  ",
     "\n"])), function (props) { return rgba(props.theme.colors.grey, 0.75); }, rgba('#000', 0.04), function (props) { return props.theme.colors.white; }, function (props) {

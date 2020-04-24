@@ -5,7 +5,7 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
-import { rgba } from 'polished';
+import rgba from 'polished/lib/color/rgba';
 import Box from '../Box';
 import { fadeIn, slideDown } from '../mixins/animations';
 var ModalOverlay = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  position: fixed;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  top: 0;\n  left: 0;\n  min-width: 100vw;\n  min-height: 100vh;\n  background-color: ", ";\n  cursor: pointer;\n  z-index: 2;\n  animation: ", " 0.15s ease-out;\n"], ["\n  position: fixed;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  top: 0;\n  left: 0;\n  min-width: 100vw;\n  min-height: 100vh;\n  background-color: ", ";\n  cursor: pointer;\n  z-index: 2;\n  animation: ", " 0.15s ease-out;\n"])), function (props) { return rgba(props.theme.colors.darkNavy, 0.25); }, fadeIn);
