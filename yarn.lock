@@ -14048,10 +14048,10 @@ store2@^2.7.1:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.11.1.tgz#118645f1b5e38d20604852362183955e360a5893"
   integrity sha512-llZqXAXjG2E4FvWsZxFmBDfh6kqQuGFZm64TX23qW02Hf4dyElhDEbYx1IIVTEMKWrrDnDA9oqOjY8WHo2NgcA==
 
-storybook-chromatic@^3.5.2:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/storybook-chromatic/-/storybook-chromatic-3.5.3.tgz#55b4c12db48833677bb3225195d14365788f8fab"
-  integrity sha512-2eLRKdf0nUW3Ln4kgBGpTAOzCk2nXhoK0O4SrMKTgPy7Gl0ibdBJm69tRhdeAsxVSw30AZCK7CvJc93a8JHxGw==
+storybook-chromatic@^3.5.5:
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/storybook-chromatic/-/storybook-chromatic-3.5.5.tgz#afcd305083d7d1fcdf88935866cd65bfec22705d"
+  integrity sha512-qnZxcjgzqq7ymQWuuWQKaHw2P8NSrv6waz/kHWngQV1vP2T8K1YcNXAnqWiUaY5T77H2N0xlepTaPMGlMw13XQ==
   dependencies:
     "@babel/preset-react" "^7.8.3"
     "@babel/runtime" "^7.8.3"
