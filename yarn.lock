@@ -14386,10 +14386,10 @@ styled-components@^5.1.0:
     shallowequal "^1.1.0"
     supports-color "^5.5.0"
 
-styled-reset@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/styled-reset/-/styled-reset-4.1.3.tgz#88d1f70f0476c519c74dbbdd03514456e068ac15"
-  integrity sha512-i/RTBS14lMMJJQNbDn6bjTak4AtNZ2Wlte3GI2GSCj1k5LP6CXG9Em/M5k1Qw5mI17aOlCdati4yCfvNgSuttQ==
+styled-reset@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/styled-reset/-/styled-reset-4.1.4.tgz#e8d7a8acbca8b80dfd86129bfc15ec976ec0c197"
+  integrity sha512-WfrkRTDfoG2cwgTpHyp8iPXVbC+gv904ANpWkC2nXNM42rJz7Yd3oLlKzf7/pcXDy82kagULGgdBbw8ITJH8Yg==
 
 styled-system@^5.1.5:
   version "5.1.5"
