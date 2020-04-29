@@ -13,9 +13,9 @@ const theme = {
     inputFocused: '#bbcbff'
   },
   fonts: {
-    body: 'Inter',
-    heading: 'Inter',
-    monospace: 'Inter'
+    body: '"Inter", system-ui, sans-serif',
+    heading: '"Inter", system-ui, sans-serif',
+    monospace: '"Inter", system-ui, sans-serif'
   },
   fontWeights: {
     normal: 400,
