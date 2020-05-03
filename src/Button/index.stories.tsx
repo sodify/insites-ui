@@ -15,6 +15,11 @@ export const Primary = () => (
     Click me
   </Button>
 )
+export const PrimaryDisabled = () => (
+  <Button variant="primary" size={getSizeSelect()} disabled>
+    Click me
+  </Button>
+)
 export const Secondary = () => (
   <Button variant="secondary" size={getSizeSelect()}>
     Click me
