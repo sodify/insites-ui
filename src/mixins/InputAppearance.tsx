@@ -20,6 +20,11 @@ const InputAppearance = css<InputAppearanceProps>`
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.04);
   box-sizing: border-box;
 
+  &:disabled {
+    background-color: ${(props) => rgba(props.theme.colors.grey, 0.2)};
+    cursor: not-allowed;
+  }
+
   &:focus {
     outline: none;
     border: 1px ${(props) => props.theme.colors.inputFocused} solid;

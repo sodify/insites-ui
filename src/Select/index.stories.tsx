@@ -11,6 +11,12 @@ export const Basic = () => (
   </Select>
 )
 
+export const Disabled = () => (
+  <Select disabled>
+    <option>Test</option>
+  </Select>
+)
+
 export const WithError = () => (
   <Select hasError>
     <option>Test</option>

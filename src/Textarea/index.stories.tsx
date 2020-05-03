@@ -6,4 +6,5 @@ export default {
 }
 
 export const Basic = () => <Textarea placeholder="Message" />
+export const Disabled = () => <Textarea placeholder="Message" disabled />
 export const WithError = () => <Textarea placeholder="Message" hasError />
