@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { variant, space, color, typography, layout, SpaceProps } from 'styled-system'
 
-type Variant = 'primary' | 'secondary' | 'pill' | 'blank'
+type Variant = 'primary' | 'secondary' | 'pill' | 'blank' | 'tab' | 'tab--active'
 type Size = 'small' | 'huge' | ''
 
 interface ButtonProps extends SpaceProps {
@@ -56,6 +56,16 @@ const Button = styled.button<ButtonProps>`
           padding: '0.75rem 1.5rem',
           borderRadius: '0.5rem',
           boxShadow: '0px 0.125rem 0.25rem rgba(0, 0, 0, 0.04)'
+        },
+        tab: {
+          padding: '0.5rem 1rem',
+          color: props.theme.colors.text,
+          borderBottom: `2px ${props.theme.colors.grey} solid`
+        },
+        'tab--active': {
+          padding: '0.5rem 1rem',
+          color: props.theme.colors.primary,
+          borderBottom: `2px ${props.theme.colors.primary} solid`
         }
       }
     })}

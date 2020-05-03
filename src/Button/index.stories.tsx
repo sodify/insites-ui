@@ -30,3 +30,16 @@ export const Blank = () => (
     Click me
   </Button>
 )
+export const Tab = () => (
+  <>
+    <Button variant="tab--active" size={getSizeSelect()}>
+      Click me
+    </Button>
+    <Button variant="tab" size={getSizeSelect()}>
+      Click me
+    </Button>
+    <Button variant="tab" size={getSizeSelect()}>
+      Click me
+    </Button>
+  </>
+)
