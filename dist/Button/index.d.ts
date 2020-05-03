@@ -1,5 +1,5 @@
 import { SpaceProps } from 'styled-system';
-declare type Variant = 'primary' | 'secondary' | 'pill' | 'blank';
+declare type Variant = 'primary' | 'secondary' | 'pill' | 'blank' | 'tab' | 'tab--active';
 declare type Size = 'small' | 'huge' | '';
 interface ButtonProps extends SpaceProps {
     variant?: Variant;
