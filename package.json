@@ -55,7 +55,7 @@
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
     "react-test-renderer": "16.13.1",
-    "storybook-chromatic": "^3.5.5",
+    "storybook-chromatic": "^4.0.2",
     "styled-components": "^5.1.0",
     "ts-loader": "^7.0.1"
   },
