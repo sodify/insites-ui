@@ -57,7 +57,7 @@
     "react-test-renderer": "16.13.1",
     "storybook-chromatic": "^3.5.5",
     "styled-components": "^5.1.0",
-    "ts-loader": "^7.0.1"
+    "ts-loader": "^8.0.7"
   },
   "jest": {
     "collectCoverageFrom": [
