@@ -19,7 +19,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^5.0.1",
     "@types/styled-system": "^5.1.9",
-    "polished": "^3.5.2",
+    "polished": "^4.1.0",
     "react-scripts": "3.4.1",
     "styled-reset": "^4.1.4",
     "styled-system": "^5.1.5",
